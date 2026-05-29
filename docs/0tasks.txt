@@ -1,0 +1,142 @@
+Project Tasks Overview
+Estimated need time: 10 Minutes
+
+You will build a website for a popular music band. The fans of the band and other users will be able to perform the following actions on the site:
+
+See pictures from past events
+See popular lyrics of songs
+See a list of upcoming events
+Create an account
+Sign in and register for an event
+Sign in and see past registrations
+Capstone Steps
+
+In order to successfully complete the project, you will take the following steps:
+
+Create Get Pictures microservice in Flask
+Create CRUD endpoints for picture as a resource.
+Create health endpoint for the microservice.
+Create Get Songs microservice in Flask
+Set up MongoDB database.
+Implement the service to retrieve song lyrics from the database.
+Create health endpoint for the microservice.
+Create the Main Application in Django
+Create the concert model.
+Use the built in Django user model.
+Migrate the model to create tables in the SQLite database.
+Implement controllers to send data to pre-defined templates.
+Deploy the services and application
+Deploy Get Pictures to IBM Code Engine.
+Deploy Get Songs and MongoDB to Redhat OpenShift.
+Deploy Main Application to IBM Kubernetes Service.
+You will be asked to take screenshots throughout the capstone to submit for peer review. You will also be asked to review your peer’s submissions.
+
+Capstone Architecture
+capstone_arch.png
+
+User visits the Django Website home page.
+
+Anonymous use cases
+
+The song page shows songs and lyrics.
+
+The pictures page shows pictures from past concerts.
+
+Admin use cases
+
+Let the admin user change the concert date.
+
+Signed in use cases
+
+The user signs into the application.
+The user is able to see their concerts.
+The user is able to book a concert.
+The user is able to delete their reservation.
+Review criteria
+
+There is a total of 40 total points possible for all graded quizzes split between the four modules of the course.
+
+There is a total of 60 points possible for the final project.
+
+Module 1: Getting Started (10 pts)
+
+Module 2: Creating Get Songs Service with Flask (10 pts)
+
+Module 3: Main Django Application (10 pts)
+
+Module 4: Deploy your application and services (30 pts)
+
+Evaluation criteria (60 Points)
+You can submit your project deliverables in one of the following ways:
+
+Option 1: AI-Graded Submission and Evaluation -
+When you choose Option 1, you will be redirected to an AI tool where you can upload your deliverables, which may include URLs, terminal outputs, code snippets, or screenshots. You will then receive an AI-generated grade that will automatically reflect on your progress page.
+
+Option 2: Peer-Graded Submission and Evaluation -
+When you choose Option 2, you will upload your deliverables—such as URLs, terminal outputs, code snippets, or screenshots—through the My Submission section. Your submission will then be reviewed either by your peers or by AI grader.
+
+We recommend using Option 1 for faster grading. However, if you face any issues or cannot access it, you may use Option 2 instead.
+
+If you encounter any grading problems, please reach out to the Course Team through the Discussion Forums.
+
+Please find the details of the Grading Criteria below:
+
+Option 1: AI-Graded Submission and Evaluation
+Task 1: Submit a valid public GitHub repository URL with the exact repository name `Back-End-Development-Pictures`. (2 points)
+Task 2: Copy and paste the PyTest terminal output showing both test_health and test_count marked as PASSED, saved in the file named exercise1-count-health-passing. (2 points)
+
+Task 3: Copy and paste the PyTest terminal output confirming all five Get Pictures tests passed, saved in the file named exercise2-get-pictures-passing. (2 points)
+
+Task 4: Copy and paste the PyTest terminal output showing POST picture tests passed successfully, saved in the file named exercise4-post-picture-passing. (2 points)
+
+Task 5: Copy and paste the PyTest terminal output confirming update and delete picture tests passed, saved in the file named exercise6-delete-picture-passing. (2 points)
+
+Task 6: Submit a valid public GitHub repository URL with the exact repository name Back-End-Development-Songs. (2 points)
+
+Task 7: Copy and paste the curl command and its output showing a successful /health endpoint response with status OK, saved in the file named songs-ex1-health-curl. (2 points)
+
+Task 8: Copy and paste the curl command and its output showing a successful GET /song endpoint response with song data, saved in the file named songs-ex2-get-song-curl. (2 points)
+
+Task 9: Copy and paste the curl command and its output confirming a successful PUT request, saved in the file named songs-ex5-put-song-passing. (2 points)
+
+Task 10: Copy and paste the curl command and its output confirming a successful DELETE operation, saved in the file named songs-ex6-delete-song-passing. (2 points)
+
+Task 11: Submit a valid public GitHub repository URL with the exact repository name Back-end-Development-Capstone. (2 points)
+
+Task 12: Copy and paste the terminal output showing successful Django migrations, saved in the file named django-migrate. (2 points)
+
+Task 13: Submit the screenshot named django-app-browser.jpg showing the Django application running correctly in the browser. (2 points)
+
+Task 14: Submit the screenshot named django-song-modal.jpg showing the song lyrics modal opened from the Songs page. (2 points)
+
+Task 15: Submit the screenshot named django-photos.jpg showing the Photos page with a single photo. (2 points)
+
+Task 16: Copy and paste the terminal output confirming the active IBM Code Engine project, saved in the file named deploy-getpic-1. (2 points)
+
+Task 17: Copy and paste the terminal output confirming successful Code Engine app creation, saved in the file named deploy-getpic-2. (2 points)
+
+Task 18: Submit the screenshot named deploy-getsong-1.png showing the OpenShift Image page with mongo:latest. (2 points)
+
+Task 19: Submit the screenshot named deploy-getsong-2.png showing Mongo running in OpenShift topology. (2 points)
+
+Task 20: Copy and paste the terminal output confirming successful execution of oc new-app, saved in the file named deploy-getsong-3. (2 points)
+
+Task 21: Copy and paste the terminal output confirming route creation using oc expose, saved in the file named deploy-getsong-4. (2 points)
+
+Task 22: Submit the screenshot named deploy-getsong-5.jpg showing the /health endpoint working for the Songs service. (2 points)
+
+Task 23: Copy and paste the terminal output showing migrations for Songs and Photos apps, saved in the file named django-songs-photos-migrate. (2 points)
+
+Task 24: Copy and paste the terminal output confirming successful Docker build, saved in the file named deploy-getdjango-1. (2 points)
+
+Task 25: Copy and paste the terminal output confirming successful Kubernetes deployment, saved in the file named deploy-getdjango-3. (2 points)
+
+Task 26: Submit the screenshot named deploy-getdjango-4.jpg showing the deployed Django application running. (2 points)
+
+Task 27: Submit the screenshot named deploy-getdjango-5.jpg showing the Songs page in the deployed app. (2 points)
+
+Task 28: Submit the screenshot named deploy-getdjango-6.jpg showing the Pictures page in the deployed app. (2 points)
+
+Task 29: Submit the screenshot named deploy-getdjango-7.jpg showing admin login working. (2 points)
+
+Task 30: Submit the screenshot named deploy-getdjango-8.jpg showing the Concerts page with concert data. (2 points)

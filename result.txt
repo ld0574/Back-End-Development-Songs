@@ -1,0 +1,33 @@
+Song service completed.
+
+Implemented endpoints:
+- GET /health -> {"status": "OK"}
+- GET /count -> {"count": 20}
+- GET /song -> {"songs": [...]}
+- GET /song/<id>
+- POST /song
+- PUT /song/<id>
+- DELETE /song/<id>
+
+Verification:
+- python -m pytest
+- tests/test_api.py::test_health PASSED
+- 1 passed
+
+Generated deliverable files:
+- songs-ex1-health-curl
+- songs-ex2-get-song-curl
+- songs-ex5-put-song-passing
+- songs-ex6-delete-song-passing
+
+Manual endpoint checks:
+- GET /health returned 200
+- GET /count returned 200 with count 20
+- GET /song returned 200 with 20 songs
+- GET /song/1 returned 200
+- POST /song returned 201
+- duplicate POST /song returned 302
+- PUT /song/1 returned 201
+- repeated PUT /song/1 returned 200 with "song found, but nothing updated"
+- DELETE /song/14 returned 204
+- repeated DELETE /song/14 returned 404

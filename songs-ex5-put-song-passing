@@ -1,0 +1,10 @@
+curl --request PUT -i -w '\n' --url http://localhost:5000/song/1 --header 'Content-Type: application/json' --data '{"lyrics": "yay hey yay yay", "title": "yay song"}'
+HTTP/1.1 201 CREATED
+Server: Werkzeug/3.1.3 Python/3.13.9
+Date: Fri, 29 May 2026 10:27:46 GMT
+Content-Type: application/json
+Content-Length: 105
+Connection: close
+
+{"_id":{"$oid":"b978a9b34c2e4a79bda9dea5e891bc88"},"id":1,"lyrics":"yay hey yay yay","title":"yay song"}
+
